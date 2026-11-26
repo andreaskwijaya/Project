@@ -7,7 +7,7 @@
   :root{--blue:#003781;--blue2:#0a4f9e;--grey:#7a7a7a;--grey2:#8c8c8c;--ink:#2b2b2b;--line:#bdbdbd;--accent:#f86200}
   *{box-sizing:border-box;margin:0;padding:0}
   body{width:1080px;height:1350px;background:#fff;font-family:Inter,sans-serif;color:var(--ink);overflow:hidden}
-  .hero{position:relative;height:300px;overflow:hidden}
+  .hero{position:relative;height:350px;overflow:hidden}
   .hero img{width:100%;height:100%;object-fit:cover;object-position:70% 22%}
   .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,0) 55%,#fff 100%)}
   .pill{position:absolute;z-index:2;left:56px;top:48px;background:var(--accent);color:#fff;font-weight:700;font-size:24px;letter-spacing:.02em;padding:12px 24px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
@@ -49,7 +49,7 @@
   .close::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.07) 0 18px,transparent 18px 36px)}
   .close *{position:relative}
   .close .k{font-size:24px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.95}
-  .close .big{font-family:"Inter Display",Inter,sans-serif;font-weight:900;font-size:112px;line-height:1;white-space:nowrap;letter-spacing:-.01em;margin-top:6px}
+  .close .big{margin-bottom:2px;font-family:"Inter Display",Inter,sans-serif;font-weight:900;font-size:112px;line-height:1;white-space:nowrap;letter-spacing:-.01em;margin-top:6px}
   .close .sub{font-size:24px;margin-top:10px;font-weight:500}
   .close .sub b{font-weight:800}
   .two{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:0 56px}
@@ -58,13 +58,16 @@
   table{width:calc(100% - 112px);margin:0 56px;border-collapse:separate;border-spacing:0;border-radius:16px;overflow:hidden;font-size:22px;text-align:center}
   th{background:var(--blue);color:#fff;font-weight:700;padding:10px 6px;font-size:19px}
   th.g{font-size:20px;border-bottom:1px solid rgba(255,255,255,.3)}
-  td{padding:9px 6px;border-bottom:1px solid #e3e3e3;font-weight:600;color:#333}
+  td{padding:14px 6px;border-bottom:1px solid #e3e3e3;font-weight:600;color:#333}
   tr:nth-child(odd) td{background:#f3f5f9}
   td:first-child{color:var(--blue);font-weight:800}
   .hl{background:#fff4e6 !important;color:#b84800 !important;font-weight:800 !important}
   .note{margin:10px 56px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--grey2);color:#fff;border-radius:14px;padding:12px 22px;font-size:20px}
   .note b.n{color:#ffd166;font-size:30px;font-weight:800;white-space:nowrap}
   h1 b{font-weight:800}
+  td{font-size:21px}
+  td:first-child{text-align:left;padding-left:22px}
+  th.g{text-align:left;padding-left:22px}
 </style>
 </head>
 <body>
@@ -77,7 +80,7 @@
   <div class="close">
     <div class="k">⏳ Kesempatan terakhir · Produk akan ditutup</div>
     <div class="big">DESEMBER 2026</div>
-    <div class="sub">Setelah itu LegacyPro <b>tidak bisa dibeli lagi.</b> Amankan polismu sekarang!</div>
+    <div class="sub"><b>Amankan polismu sekarang!</b></div>
   </div>
 
   <div class="sec">Manfaat Unggulan</div>
@@ -86,15 +89,13 @@
     <div class="card"><div class="ic"><svg viewBox="0 0 48 48"><path d="M24 42S6 31 6 18a9 9 0 0 1 18-3 9 9 0 0 1 18 3c0 13-18 24-18 24z"/><path d="M8 24h9l3-6 5 12 3-6h12"/></svg></div><p><span><b>Waiver 77 Penyakit Kritis</b>: sisa premi dibebaskan, polis tetap jalan</span></p></div>
   </div>
 
-  <div class="sec">Hitungan Premi per Tahun · UP Rp1 Miliar</div>
+  <div class="sec">Premi per Tahun · UP Rp1 Miliar · Bayar 5 Tahun</div>
   <table>
-    <tr><th rowspan="2" class="g">Usia</th><th colspan="2" class="g">Pria</th><th colspan="2" class="g">Wanita</th></tr>
-    <tr><th>Bayar 10 th</th><th>Bayar 15 th</th><th>Bayar 10 th</th><th>Bayar 15 th</th></tr>
-    <tr><td>30 th</td><td>Rp9,14 jt</td><td>Rp8,09 jt</td><td>Rp7,14 jt</td><td>Rp6,11 jt</td></tr>
-    <tr><td>35 th</td><td>Rp11,70 jt</td><td>Rp10,38 jt</td><td>Rp9,15 jt</td><td>Rp7,78 jt</td></tr>
-    <tr><td>40 th</td><td>Rp15,60 jt</td><td>Rp14,25 jt</td><td>Rp12,59 jt</td><td>Rp10,35 jt</td></tr>
+    <tr><th class="g">Usia</th><th>25 th</th><th>30 th</th><th>35 th</th><th>40 th</th><th>45 th</th><th>50 th</th></tr>
+    <tr><td>Pria</td><td>Rp13,16 jt</td><td>Rp14,92 jt</td><td>Rp19,41 jt</td><td>Rp25,35 jt</td><td>Rp38,74 jt</td><td>Rp54,45 jt</td></tr>
+    <tr><td>Wanita</td><td>Rp10,99 jt</td><td>Rp12,27 jt</td><td>Rp15,80 jt</td><td>Rp21,58 jt</td><td>Rp31,44 jt</td><td>Rp45,71 jt</td></tr>
   </table>
-  <div class="note"><span>Pria 35 th, bayar 15 th (total ± Rp155,7 jt) → warisan di usia 75+</span><b class="n">Rp1,5 M</b></div>
+  <div class="note"><span>Pria 35 th, bayar 5 th saja (total ± Rp97 jt) → warisan di usia 75+</span><b class="n">Rp1,5 M</b></div>
 
   <div class="cta">
     <div class="t">Penasaran premimu berapa?<small>Kirim usia kamu, aku hitungin gratis dalam 5 menit 😉</small></div>
